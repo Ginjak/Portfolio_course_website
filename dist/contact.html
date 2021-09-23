@@ -37,16 +37,16 @@
 
     <form name="Contact" method="POST" data-netlify="true" data-netlify-recaptcha="true">
       <div class="text-fields">
-        <input name="Name" type="text" class="text-input name-input" placeholder="Name">
-        <input name="Subject" type="text" class="text-input subject-input" placeholder="Subject">
-        <input name="Email" type="email" class="text-input email-input" placeholder="Email Address">
-        <input name="Phone" type="text" class="text-input phone-input" placeholder="Phone Number">
-        <textarea name="Message" class="text-input message-input" placeholder="Enter Message"></textarea>
+        <input name="Name" type="text" class="text-input name-input" placeholder="Name" required>
+        <input name="Subject" type="text" class="text-input subject-input" placeholder="Subject" required>
+        <input name="Email" type="email" class="text-input email-input" placeholder="Email Address" required>
+        <input name="Phone" type="text" class="text-input phone-input" placeholder="Phone Number" required>
+        <textarea name="Message" class="text-input message-input" placeholder="Enter Message" required></textarea>
         <div class="my-2">
         <div data-netlify-recaptcha="true"></div>
       </div>
       </div>
-      <div class="my-2" data-netlify-recaptcha="true"></div>
+      <div class="my-2" data-netlify-recaptcha="true" required></div>
       <button type="submit" class="btn-dark">Submit</button>
     </form>
   </div>
